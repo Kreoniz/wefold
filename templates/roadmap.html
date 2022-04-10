@@ -2,27 +2,22 @@
 <html lang="ru">
     <head>
         <title>Карта Refold</title>
-        <link rel="stylesheet" href="css/roadmap.css">
+        <link rel="stylesheet" href="../css/roadmap.css">
         <link rel="icon" href="https://cdn.icon-icons.com/icons2/38/PNG/512/origami_5679.png">
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
     </head>
 
     <body>
         <!-- header -->
-        <header class="header">
-            <nav class="header__nav">
-                <a href="index.html">На главную</a>
-                <a href="roadmap.html">Карта</a>
-                <a href="about.html">О проекте</a>
-                <a target="_blank" href="https://refold.la/">Официальный сайт</a>
-            </nav>
-        </header>
+        {% extends "flask_extensions.html" %}
         <!-- header -->
+
+        {% block content %}
 
         <div class="container">
             <div class="roadmap">
                 <h1>Карта Refold</h1>
-                <div class="roadman__stage">
+                <div class="roadmap__stage">
                     <div class="stage0">
                         <p class="roadmap__stage-text">Этап 0</p>
                         <h2 class="roadmap__stage-header">Философия Refold</h2>
@@ -31,7 +26,7 @@
                             <div class="stage0-a">
                                 <h3>A: Познакомьтесь с Методом</h3>
                                 <div class="a1">
-                                    <a href="#">Что такое изучение языка через погружение?</a>
+                                    <a href="stage-0/a/whats_immersion.html">Что такое изучение языка через погружение?</a>
                                 </div>
                                 <div class="a2">
                                     <a href="#">Виды Деятельности</a>
@@ -44,7 +39,7 @@
                     </div>
                 </div>
 
-                <div class="roadman__stage">
+                <div class="roadmap__stage">
                     <div class="stage1">
                         <p class="roadmap__stage-text">Этап 1</p>
                         <h2 class="roadmap__stage-header">Изучите Основы</h2>
@@ -66,7 +61,7 @@
                     </div>
                 </div>
 
-                <div class="roadman__stage">
+                <div class="roadmap__stage">
                     <div class="stage2">
                         <p class="roadmap__stage-text">Этап 2</p>
                         <h2 class="roadmap__stage-header">Научитесь Понимать</h2>
@@ -78,12 +73,7 @@
             </div>
         </div>
 
-        <!-- footer -->
-        <footer class="footer">
-            <a target="_blank" href="https://refold.la/" class="footer__link">Не забудьте заглянуть на официальный сайт :)</a>
-            <img class="footer__logo-l" src="./img/icons/symbol-contrast.svg" alt="origami crane">
-            <img class="footer__logo-r" src="./img/icons/symbol-contrast.svg" alt="origami crane">
-        </footer>
-        <!-- footer -->
+        {% endblock %}
+
     </body>
 </html>

@@ -2,22 +2,17 @@
 <html lang="ru">
     <head>
         <title>Refold</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../css/style.css">
         <link rel="icon" href="https://cdn.icon-icons.com/icons2/38/PNG/512/origami_5679.png">
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
     </head>
 
     <body>
         <!-- header -->
-        <header class="header">
-            <nav class="header__nav">
-                <a href="index.html">На главную</a>
-                <a href="roadmap.html">Карта</a>
-                <a href="about.html">О проекте</a>
-                <a target="_blank" href="https://refold.la/">Официальный сайт</a>
-            </nav>
-        </header>
+        {% extends "flask_extensions.html" %}
         <!-- header -->
+
+        {% block content %}
 
         <!-- particle animation -->
         <div class="background_animation">
@@ -65,12 +60,7 @@
                 </div>
             </div>
         </div>
-    <!-- footer -->
-    <footer class="footer">
-        <a target="_blank" href="https://refold.la/" class="footer__link">Не забудьте заглянуть на официальный сайт :)</a>
-        <img class="footer__logo-l" src="./img/icons/symbol-contrast.svg" alt="origami crane">
-        <img class="footer__logo-r" src="./img/icons/symbol-contrast.svg" alt="origami crane">
-    </footer>
-    <!-- footer -->
+        {% endblock %}
+
     </body>
 </html>

@@ -1,0 +1,27 @@
+@import url("default.css");
+
+
+.container{
+    padding: 130px 0 0;
+    width: 60vw;
+    margin: auto;
+}
+.website-info__header {
+    margin: 0px 0px 20px 0px;
+}
+.website-info__text {
+    margin: 0px 0px 40px 0px;
+}
+.person{
+    margin: 40px 0;
+}
+.people img{
+    height: 400px;
+    border-radius: 20px;
+}
+.people__photo{
+    margin: 20px 0;
+}
+.people h3{
+    margin: 20px 0;
+}
