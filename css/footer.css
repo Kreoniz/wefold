@@ -1,0 +1,35 @@
+.footer{
+    position: relative;
+    z-index: 1;
+    margin: 180px 0 0;
+    background-color: #04aa6d;
+    width: 100%;
+    height: 10vh;
+}
+.footer__link{
+    width: 600px;
+    margin: auto;
+    display: block;
+    color: #fff;
+    line-height: 10vh;
+    font-size: 24px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+    transition: .4s;
+}
+.footer__link:hover{
+    background-color: #0cca84;
+    border-radius: 15px;
+}
+.footer__logo-l{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100%;
+}
+.footer__logo-r{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    height: 100%;
+}
