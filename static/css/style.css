@@ -10,8 +10,10 @@
     height: 100vh;
     text-shadow: 2px 1px 1px #000;
     /* background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../img/tree_background.webp') 0 0/cover no-repeat; */
-    padding: 20rem 0px 0px 0px;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .big-heading{
     position: relative;
@@ -24,26 +26,33 @@
     z-index: 1;
 }
 .introduction{
-    width: 60vw;
+    width: 70vw;
     margin: 100px auto;
 }
 .explanation{
-    padding: 0 0 0 40px;
-    margin: 20px auto 0;
+    padding: 0 20px;
+    margin: 30px auto 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     background: #fff;
     width: auto;
-    height: 150px;
+    height: 200px;
     border-radius: 25px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.165);
+
+}
+.explanation__item{
+    margin: 0 10px;
+    
 }
 .explanation__header{
     margin: 0px 0px 10px 0px;
+    text-align: center;
 }
 .explanation__text{
+    text-align: center;
     color: #008846;
 }
 .introduction__header{

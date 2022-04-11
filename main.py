@@ -13,18 +13,35 @@ app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
 @app.route('/index')
 def main_page():
     params = {}
+    params['crane_logo'] = url_for('static', filename='img/icons/symbol-contrast.svg')
     params['css_dest'] = url_for('static', filename='css/style.css')
     return render_template('index.html', **params)
 
 @app.route('/roadmap')
 def roadmap():
     params = {}
+    params['crane_logo'] = url_for('static', filename='img/icons/symbol-contrast.svg')
     params['css_dest'] = url_for('static', filename='css/roadmap.css')
     return render_template('roadmap.html', **params)
+
+# <----------- All roadmap-associated files ----------->
+@app.route('/roadmap/a/whats_immersion')
+def whats_immersion():
+    params = {}
+    params['css_dest'] = url_for('static', filename='css/article.css')
+    params['crane_logo'] = url_for('static', filename='img/icons/symbol-contrast.svg')
+    return render_template('stage-0/a/whats_immersion.html', **params)
+
+
+
+
+
+# <----------- All roadmap-associated files ----------->
 
 @app.route('/about')
 def about():
     params = {}
+    params['crane_logo'] = url_for('static', filename='img/icons/symbol-contrast.svg')
     params['css_dest'] = url_for('static', filename='css/about.css')
     return render_template('about.html', **params)
 
