@@ -1,7 +1,6 @@
 @import url("default.css");
 @import url("particles.css");
 
-
 .container{
     position: relative;
     z-index: 1;
@@ -56,7 +55,6 @@
 .advantages{
     margin: 120px 0 0;
 }
-
 .advantages__text{
     margin: 20px 0;
 }
