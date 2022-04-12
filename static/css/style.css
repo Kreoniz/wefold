@@ -30,7 +30,7 @@
     margin: 100px auto;
 }
 .explanation{
-    padding: 15px 20px;
+    padding: 25px 20px;
     margin: 30px auto 0;
     display: flex;
     flex-direction: row;
@@ -56,6 +56,7 @@
     color: #008846;
 }
 .introduction__header{
+    line-height: 1.4;
     margin: 0 0 20px 0;
 }
 .introduction__text{

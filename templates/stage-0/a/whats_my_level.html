@@ -2,23 +2,18 @@
 <html lang="ru">
     <head>
         <title>Мой Уровень</title>
-        <link rel="stylesheet" href="./article.css">
+        <link rel="stylesheet" href="{{css_dest}}">
         <link rel="icon" href="https://cdn.icon-icons.com/icons2/38/PNG/512/origami_5679.png">
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
     </head>
-
+    
     <body>
-        <!-- header -->
-        <header class="header">
-            <nav class="header__nav">
-                <a href="index.html">На главную</a>
-                <a href="roadmap.html">Карта</a>
-                <a href="about.html">О проекте</a>
-                <a target="_blank" href="https://refold.la/">Официальный сайт</a>
-            </nav>
-        </header>
-        <!-- header -->
-
+    <!-- header -->
+    {% extends "flask_extensions.html" %}
+    <!-- header -->
+    
+    {% block content %}
+    
         <div class="container">
             <div class="article">
                 <h1 class="article__header">0A: Каков мой уровень владения языком?</h1>
@@ -101,16 +96,11 @@
                 <p class="article__paragraph"></p>
 
             </div>
-            <a href="whats_immersion.html" class="previous-article"><span>Назад</span></a>
-            <a href="whats_my_level.html" class="next-article"><span>Вперёд</span></a>
+            <a href="/roadmap/stage-0/a/activities_explained" class="previous-article"><span>Назад</span></a>
+            <a href="#" class="next-article"><span>Вперёд</span></a>
         </div>
 
-        <!-- footer -->
-        <footer class="footer">
-            <a target="_blank" href="https://refold.la/" class="footer__link">Не забудьте заглянуть на официальный сайт :)</a>
-            <img class="footer__logo-l" src="../img/icons/symbol-contrast.svg" alt="origami crane">
-            <img class="footer__logo-r" src="../img/icons/symbol-contrast.svg" alt="origami crane">
-        </footer>
-        <!-- footer -->
+
+        {% endblock %}
     </body>
 </html>

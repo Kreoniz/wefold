@@ -2,31 +2,27 @@
 <html lang="ru">
     <head>
         <title>Виды Деятельности</title>
-        <link rel="stylesheet" href="./article.css">
+        <link rel="stylesheet" href="{{css_dest}}">
         <link rel="icon" href="https://cdn.icon-icons.com/icons2/38/PNG/512/origami_5679.png">
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
     </head>
 
     <body>
-        <!-- header -->
-        <header class="header">
-            <nav class="header__nav">
-                <a href="index.html">На главную</a>
-                <a href="roadmap.html">Карта</a>
-                <a href="about.html">О проекте</a>
-                <a target="_blank" href="https://refold.la/">Официальный сайт</a>
-            </nav>
-        </header>
-        <!-- header -->
+    <!-- header -->
+    {% extends "flask_extensions.html" %}
+    <!-- header -->
 
-        <div class="container">
+    {% block content %}
+
+    
+    <div class="container">
             <div class="article">
                 <h1 class="article__header">0A: Виды Деятельности</h1>
                 <p class="article__paragraph">Метод Refold построен на трёх основных видах деятельности:</p>
-    <p class="article__paragraph indent">1. <span class="italic">Активное погружение</span>: Когда вы полностью сфокусированы на своём погружении в языковую   среду.</p>
-    <p class="article__paragraph indent"><span class="italic">2. Пассивное слушание</span>: Когда вы слушаете медиа на иностранном языке в течение дня.</p>
+                <p class="article__paragraph indent">1. <span class="italic">Активное погружение</span>: Когда вы полностью сфокусированы на своём погружении в языковую   среду.</p>
+                <p class="article__paragraph indent"><span class="italic">2. Пассивное слушание</span>: Когда вы слушаете медиа на иностранном языке в течение дня.</p>
     <p class="article__paragraph indent">3. <span class="italic">Активное изучение</span>: Когда вы учите слова и грамматику.</p>
-
+    
     <p class="article__paragraph">Каждый вид деятельности имеет важную роль в процессе овладения языка.</p>
 
     <h2>Активное Погружение</h2>
@@ -34,7 +30,7 @@
     <p class="article__paragraph">Активное погружение - это самый важный вид деятельности в процессе овладения языком. Именно во время активного погружения происходит овладение языком. Когда вы полностью сконцентрированы на контенте, ваш мозг трудится, пытаясь расшифровать язык.</p>
     <p class="article__paragraph">
         Существует два вида активного погружения: интенсивное и свободное погружение.
-        </p>
+    </p>
     
     <h3>Интенсивное Погружение</h3>
     <p class="article__paragraph">Интенсивное погружение - это когда вы используете словарь, пытаясь понять контент погружения. По мере погружения, вы смотрите определение или перевод каждого неизвестного слова и пытаетесь понять значение каждого предложения. Этот процесс замечателен для изучения слов и построения понимания языка.
@@ -49,13 +45,13 @@
     </p>
     <p class="article__paragraph">Трудностью является то, что во время свободного погружения вы будете понимать значительно меньше чем во время интенсивного. Для взрослых, отсутсвия понимания может быть неприятным, но это важная часть процесса изучения языка. Нельзя избежать стадии непонимания. Принять дискомфорт будет лучшим решением.
     </p>
-
+    
     <h3>Баланс</h3>
     <p class="article__paragraph">Некоторые люди предпочитают интенсивное погружение, тогда как другие предпочитают свободное. Однако оба вида важны для процесса овладения языком. Вам следует больше заниматься тем, который вам нравится, но удостоверьтесь что вы делаете и то и другое.
     </p>
     <p class="article__paragraph">Интенсивное погружение имеет склонность быть более утомительным чем свободное, поэтому лучше сперва заняться им, когда у вас ещё есть силы.
     </p>
-
+    
     <h2>Пассивное Слушание</h2>
     <p class="article__paragraph">Большинство людей не могут проводить весь день активно смотря ТВ или читая. Однако большинство из нас могут слушать ЦЯ в течение дня.
     </p>
@@ -67,7 +63,7 @@
     </p>
     <p class="article__paragraph">Один из способов сделать пассивное слушание более интересным - это снова слушать контент, который вы уже смотрели во время активного погружения. Так как вы уже знаете события, происходящие в таком контенте, он будет более понимаемым и интересным. Прослушивание снова также даёт вашему мозгу ещё один шанс усвоить то, что вы пропустили при первом просмотре.
     </p>
-
+    
     <h2>Активное Изучение</h2>
     <p class="article__paragraph">Refold является погружение-направленным методом, но это не значит что мы рекомендуем только погружение. Во время активного изучения вы проводите время, изучая информацию *о* вашем ЦЯ, чтобы сделать погружение более вразумительным.
     </p>
@@ -83,17 +79,11 @@
     <p class="article__paragraph">На первом этапе мы объясним как следует начать работу со всеми четырьмя элементами активного изучения языка.
     </p>
     <p class="article__paragraph"></p>
-            </div>
-            <a href="whats_immersion.html" class="previous-article"><span>Назад</span></a>
-            <a href="whats_my_level.html" class="next-article"><span>Вперёд</span></a>
+</div>
+            <a href="/roadmap/stage-0/a/whats_immersion" class="previous-article"><span>Назад</span></a>
+            <a href="/roadmap/stage-0/a/whats_my_level" class="next-article"><span>Вперёд</span></a>
         </div>
-
-        <!-- footer -->
-        <footer class="footer">
-            <a target="_blank" href="https://refold.la/" class="footer__link">Не забудьте заглянуть на официальный сайт :)</a>
-            <img class="footer__logo-l" src="../img/icons/symbol-contrast.svg" alt="origami crane">
-            <img class="footer__logo-r" src="../img/icons/symbol-contrast.svg" alt="origami crane">
-        </footer>
-        <!-- footer -->
+        
+    {% endblock %}
     </body>
 </html>

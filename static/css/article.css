@@ -58,7 +58,7 @@
 }
 .previous-article{
     position: absolute;
-    right: 200px;
+    left: 10px;
     display: inline-block;
     background-color: #04aa6d;
     text-align: center;

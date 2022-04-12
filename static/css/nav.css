@@ -7,12 +7,12 @@
     position: fixed;
     right: 0;
     border-end-start-radius: 10px;
-    z-index: 999;
+    z-index: 99;
 }
 .header__nav a{
     font-family: Montserrat;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 22px;
     color: #fff;
     float: left;
     padding: 17px 15px;
