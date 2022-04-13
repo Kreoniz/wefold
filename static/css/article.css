@@ -31,7 +31,12 @@
     margin: 0px 0px 10px 0px;
 }
 .article h2{
-    margin: 0px 0px 20px 0px;
+    margin: 30px 0px 20px 0px;
+}
+.article__image{
+    max-height: 40%;
+    display: block;
+    margin: 25px auto;
 }
 .next-article{
     position: absolute;

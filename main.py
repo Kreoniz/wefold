@@ -46,6 +46,29 @@ def whats_my_level():
     params['crane_logo'] = url_for('static', filename='img/icons/symbol-contrast.svg')
     return render_template('stage-0/a/whats_my_level.html', **params)
 
+@app.route('/roadmap/stage-1/a/immersion')
+def immersion():
+    params = {}
+    params['css_dest'] = url_for('static', filename='css/article.css')
+    params['crane_logo'] = url_for('static', filename='img/icons/symbol-contrast.svg')
+    return render_template('stage-1/a/immersion.html', **params)
+
+@app.route('/roadmap/stage-1/a/language_basics')
+def language_basics():
+    params = {}
+    params['css_dest'] = url_for('static', filename='css/article.css')
+    params['crane_logo'] = url_for('static', filename='img/icons/symbol-contrast.svg')
+    return render_template('stage-1/a/language_basics.html', **params)
+
+@app.route('/roadmap/stage-1/a/vocabulary')
+def vocabulary():
+    params = {}
+    params['css_dest'] = url_for('static', filename='css/article.css')
+    params['crane_logo'] = url_for('static', filename='img/icons/symbol-contrast.svg')
+    params['vocabulary_card_front'] = url_for('static', filename='img/vocabulary-card-front.png')
+    params['vocabulary_card_back'] = url_for('static', filename='img/vocabulary-card-back.png')
+    return render_template('stage-1/a/vocabulary.html', **params)
+
 # * <--------------------------- All roadmap-associated files --------------------------->
 
 @app.route('/about')
