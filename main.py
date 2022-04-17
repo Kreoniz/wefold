@@ -6,6 +6,7 @@ app = Flask(__name__,
             static_folder='static',
             template_folder='templates')
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
+CONTACT_EMAIL = os.environ.get('CONTACT_EMAIL')
 
 
 @app.route('/')
@@ -76,6 +77,7 @@ def about():
     params = {}
     params['crane_logo'] = url_for('static', filename='img/icons/symbol-contrast.svg')
     params['css_dest'] = url_for('static', filename='css/about.css')
+    params['email'] = CONTACT_EMAIL
     return render_template('about.html', **params)
 
 
