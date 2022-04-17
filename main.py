@@ -6,7 +6,7 @@ app = Flask(__name__,
             static_folder='static',
             template_folder='templates')
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
-CONTACT_EMAIL = os.environ.get('CONTACT_EMAIL')
+CONTACT_EMAIL = os.getenv('CONTACT_EMAIL', 'в текущий момент почта недоступна')
 
 
 @app.route('/')
